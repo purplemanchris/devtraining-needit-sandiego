@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Appointment Booking">22451b0097701110a4e5db24a253af81</macroponent>
+        <name>Data validation</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+async function handler({api, event, helpers, imports}) {
+    if (!api.data.appointment_booking_config_1.output.opened_for) {
+        const translatedText = await helpers.translate("Please provide information for the following fields: Contact(contact)");
+        api.setState("errorMessage", translatedText);
+        api.setState("loading", false);
+    }
+
+    if (!(api.data.appointment_booking_config_1.output && api.data.appointment_booking_config_1.output.bookedAppointment)) {
+      const scheduleAppointment = await helpers.translate("Schedule Appointment");
+      api.setState("title", scheduleAppointment);
+    }
+    else {
+      const rescheduleAppointment = await helpers.translate("Reschedule Appointment");
+      api.setState("title", rescheduleAppointment);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:13:12</sys_created_on>
+        <sys_id>be451b0097701110a4e5db24a253af9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data validation</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_be451b0097701110a4e5db24a253af9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:13:12</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

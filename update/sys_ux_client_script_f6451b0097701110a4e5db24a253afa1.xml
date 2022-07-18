@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>ce505f8a23202010778fc50947bf6566</includes>
+        <macroponent display_value="Appointment Booking">22451b0097701110a4e5db24a253af81</macroponent>
+        <name>Update date range</name>
+        <required_translations/>
+        <script><![CDATA[function handler({api, event, imports}) {
+    var moment = imports["sn_fsm_wrkspc.moment-timezone@v0.5.5"]();
+
+	var start = event.payload.startMoment.startOf("week");
+    var end = event.payload.endMoment.endOf("week");
+    const futureBookableDays = api.data.appointment_booking_config_1.output ? api.data.appointment_booking_config_1.output.future_bookable_max_days: 14;
+
+	if (start.isBefore(moment())) {
+		start = moment().startOf('day');
+	}
+
+    if (end.isAfter(moment().add(futureBookableDays, 'days'))) {
+		end = moment().endOf('day').add(futureBookableDays, 'days');
+	}
+    api.setState("start_date", start.format("YYYY-MM-DD HH:mm:ss"));
+    api.setState("end_date", end.format("YYYY-MM-DD HH:mm:ss")); 
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:13:12</sys_created_on>
+        <sys_id>f6451b0097701110a4e5db24a253afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update date range</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_f6451b0097701110a4e5db24a253afa1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:13:12</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

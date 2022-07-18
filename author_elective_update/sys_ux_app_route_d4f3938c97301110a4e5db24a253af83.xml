@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="NeedIt Experience">cc32bbc397241110a4e5db24a253af53</app_config>
+        <description/>
+        <fields>table,sysid</fields>
+        <icon/>
+        <name>Record</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>record</route_type>
+        <screen_type display_value="Record">cee31f0897301110a4e5db24a253af19</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:07:18</sys_created_on>
+        <sys_id>d4f3938c97301110a4e5db24a253af83</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_app_route_d4f3938c97301110a4e5db24a253af83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:07:46</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=d4f3938c97301110a4e5db24a253af83"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>8af8ce6adbf641109df22f17d496193a</instance_id>
+        <instance_name>dev126111</instance_name>
+        <name>sys_ux_app_route_d4f3938c97301110a4e5db24a253af83</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="NeedIt Experience">cc32bbc397241110a4e5db24a253af53</app_config><description/><fields>table,sysid</fields><icon/><name>Record</name><optional_parameters/><order>0</order><parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent><parent_macroponent_composition_element_id/><route_type>record</route_type><screen_type display_value="Record">cee31f0897301110a4e5db24a253af19</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-15 14:07:18</sys_created_on><sys_id>d4f3938c97301110a4e5db24a253af83</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Record</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ux_app_route_d4f3938c97301110a4e5db24a253af83</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-15 14:07:46</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=d4f3938c97301110a4e5db24a253af83"/></record_update>]]></payload>
+        <payload_hash>1765925738</payload_hash>
+        <record_name>Record</record_name>
+        <reverted_from/>
+        <source>ebf1330797241110a4e5db24a253af26</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:07:46</sys_created_on>
+        <sys_id>9f04178c97301110a4e5db24a253afe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182022fdb000000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:07:46</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>9704178c363011109587f0d8ac9a2ae2</update_guid>
+        <update_guid_history>9704178c363011109587f0d8ac9a2ae2:1765925738,1004db849c301110e42d3b252d5976e7:667759142,58f3938c85301110c0044722b58f5a84:-1169258267</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:16:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>e4ddc7b599634c35821c687d8bffbc41</sys_id>
+        <sys_metadata>d4f3938c97301110a4e5db24a253af83</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_d4f3938c97301110a4e5db24a253af83</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_d4f3938c97301110a4e5db24a253af83">9f04178c97301110a4e5db24a253afe2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:16:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

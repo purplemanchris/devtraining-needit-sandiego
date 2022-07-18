@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="NeedIt Experience">cc32bbc397241110a4e5db24a253af53</app_config>
+        <description>Return UI action for TOL</description>
+        <event_mappings>[ {
+  "eventMappingId" : "ckucaxaalqaaaabbccddeiiccyyxjjikcr",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_84a2c3249c033010fa9be6ee6ce9cf43",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_84a2c3249c033010fa9be6ee6ce9cf43",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uib_base_aw.RECORD#CLOSE_MODAL",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "3bcac58cb7731010cd8af8e32e11a971"
+    },
+    "operation" : null,
+    "targetId" : "ckucaxaalqaaaabbbbddeiicccmsveejjpc",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Return">6325530097701110a4e5db24a253afaa</macroponent>
+        <macroponent_config>{
+  "table" : "",
+  "sysId" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>Return default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">9905d78c97301110a4e5db24a253af4e</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Record default Return">d325530097701110a4e5db24a253af61</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 14:12:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb25530097701110a4e5db24a253afab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Return default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_screen_eb25530097701110a4e5db24a253afab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 14:12:43</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=eb25530097701110a4e5db24a253afab"/>
+</record_update>
